@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'assets_path' => '/vendor/tcg/voyager/publishable/assets',
+    'assets_path' => '/vendor/tcg/voyager/assets',
 
     /*
     |--------------------------------------------------------------------------

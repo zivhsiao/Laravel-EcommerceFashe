@@ -162,7 +162,7 @@
 @endsection
 
 @section('plugin_js_for_this_page')
-<script src="{{ URL::asset('js/app.js') }}"></script>
+<script src="{{ URL::asset('public/js/app.js') }}"></script>
 <script>
  (function(){
 	const classname = document.querySelectorAll('.quantity')

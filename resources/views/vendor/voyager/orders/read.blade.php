@@ -182,7 +182,7 @@
                 $('.side-body').multilingual();
             });
         </script>
-        <script src="{{ voyager_asset('js/multilingual.js') }}"></script>
+        <script src="{{ voyager_asset('public/js/multilingual.js') }}"></script>
     @endif
     <script>
         var deleteFormAction;

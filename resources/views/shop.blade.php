@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title','Shop')
 @section('plugin_css_for_this_page')
-<link rel="stylesheet" href="{{ URL::asset('css/vendor/nouislider.min.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('public/css/vendor/nouislider.min.css') }}">
 @endsection
 
 @section('content')
@@ -163,7 +163,7 @@
 
 <!--===============================================================================================-->
 {{--
-<script src="{{ URL::asset('js/vendor/nouislider.min.js') }}"></script> --}}
+<script src="{{ URL::asset('public/js/vendor/nouislider.min.js') }}"></script> --}}
 <script type="text/javascript">
 	/*[ No ui ]
 	    ===========================================================*/

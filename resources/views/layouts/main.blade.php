@@ -8,32 +8,32 @@
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="{{ URL::asset('theme-images/favicon.png') }}"/>
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/vendor/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/vendor/bootstrap.min.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/fonts/font-awesome.min.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/fonts/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/fonts/themify-icons.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/fonts/icon-font.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/fonts/icon-font.min.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/fonts/style.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/fonts/style.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/vendor/animate.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/vendor/animate.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/vendor/hamburgers.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/vendor/hamburgers.min.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/vendor/animsition.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/vendor/animsition.min.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/vendor/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/vendor/select2.min.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/vendor/daterangepicker.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/vendor/daterangepicker.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/vendor/slick.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/vendor/slick.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/vendor/lightbox.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/vendor/lightbox.min.css') }}">
 <!--===============================================================================================-->
-    <link rel="stylesheet" href="{{ URL::asset('css/libs/util.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/libs/main.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/libs/util.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('public/css/libs/main.css') }}">
 <!--===============================================================================================-->
 <!-- plugin css for this page -->
   @yield('plugin_css_for_this_page')
@@ -86,7 +86,7 @@
 					<!--  -->
 					@else
 					<a href="#" class="header-wrapicon1 dis-block m-l-30">
-                        <img src="{{ URL::asset('images/icons/icon-header-01.png') }}" class="header-icon1" alt="ICON">
+                        <img src="{{ URL::asset('public/images/icons/icon-header-01.png') }}" class="header-icon1" alt="ICON">
 					</a>
 
 
@@ -110,7 +110,7 @@
 
 					<div class="header-wrapicon2 m-r-13">
 
-						<img src="{{ URL::asset('images/icons/icon-header-02.png') }}"  class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<img src="{{ URL::asset('public/images/icons/icon-header-02.png') }}"  class="header-icon1 js-show-header-dropdown" alt="ICON">
 
 						@if(Cart::count() > 0)
 						<span class="header-icons-noti">{{Cart::count()}}</span>
@@ -202,7 +202,7 @@
 		<div class="wrap_header_mobile">
 			<!-- Logo moblie -->
 			<a href="{{route('home')}}" class="logo-mobile">
-				<img src="{{ asset('images/icons/logo.png') }}" alt="IMG-LOGO">
+				<img src="{{ asset('public/images/icons/logo.png') }}" alt="IMG-LOGO">
 			</a>
 
 			<!-- Button show menu -->
@@ -211,9 +211,9 @@
 				<div class="header-icons-mobile">
 					<a href="" class="header-wrapicon1 dis-block">
 					    @guest
-						<img src="{{ asset('images/icons/icon-header-01.png') }}" class="header-icon1" alt="ICON">
+						<img src="{{ asset('public/images/icons/icon-header-01.png') }}" class="header-icon1" alt="ICON">
 						@else
-						<img src="{{ asset('images/icons/icon-header-01.png') }}" class="header-icon1" alt="ICON"> {{ Auth::user()->name }}
+						<img src="{{ asset('public/images/icons/icon-header-01.png') }}" class="header-icon1" alt="ICON"> {{ Auth::user()->name }}
 						@endguest
 					</a>
 
@@ -221,7 +221,7 @@
 
 					<div class="header-wrapicon2">
 					<a href="{{route('cart.index')}}" class="header-wrapicon1 dis-block">
-						<img src="{{ asset('images/icons/icon-header-02.png') }}" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<img src="{{ asset('public/images/icons/icon-header-02.png') }}" class="header-icon1 js-show-header-dropdown" alt="ICON">
 						@if(Cart::count() > 0)
 						<span class="header-icons-noti">{{Cart::count()}}</span></a>
 						@else
@@ -388,23 +388,23 @@
 
 		<div class="t-center p-l-15 p-r-15">
 			<a>
-				<img class="h-size2" src="{{asset('images/icons/paypal.png')}}" alt="IMG-PAYPAL">
+				<img class="h-size2" src="{{asset('public/images/icons/paypal.png')}}" alt="IMG-PAYPAL">
 			</a>
 
 			<a>
-				<img class="h-size2" src="{{asset('images/icons/visa.png')}}" alt="IMG-VISA">
+				<img class="h-size2" src="{{asset('public/images/icons/visa.png')}}" alt="IMG-VISA">
 			</a>
 
 			<a>
-				<img class="h-size2" src="{{asset('images/icons/mastercard.png')}}" alt="IMG-MASTERCARD">
+				<img class="h-size2" src="{{asset('public/images/icons/mastercard.png')}}" alt="IMG-MASTERCARD">
 			</a>
 
 			<a>
-				<img class="h-size2" src="{{asset('images/icons/express.png')}}" alt="IMG-EXPRESS">
+				<img class="h-size2" src="{{asset('public/images/icons/express.png')}}" alt="IMG-EXPRESS">
 			</a>
 
 			<a>
-				<img class="h-size2" src="{{asset('images/icons/discover.png')}}" alt="IMG-DISCOVER">
+				<img class="h-size2" src="{{asset('public/images/icons/discover.png')}}" alt="IMG-DISCOVER">
 			</a>
 
 			<div class="t-center s-text8 p-t-20">
@@ -444,14 +444,14 @@
 	</div>
 
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/jquery-3.2.1.min.js') }}"></script>
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/animsition.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/animsition.min.js') }}"></script>
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/popper.js') }}"></script>
-    <script src="{{ URL::asset('js/vendor/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/popper.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/bootstrap.min.js') }}"></script>
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/select2.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/select2.min.js') }}"></script>
 	<script type="text/javascript">
 		$(".selection-1").select2({
 			minimumResultsForSearch: 20,
@@ -459,14 +459,14 @@
 		});
 	</script>
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/slick.min.js') }}"></script>
-    <script src="{{ URL::asset('js/libs/slick-custom.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/slick.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/libs/slick-custom.js') }}"></script>
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/countdowntime.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/countdowntime.js') }}"></script>
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/lightbox.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/lightbox.min.js') }}"></script>
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/sweetalert.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/sweetalert.min.js') }}"></script>
 	<script type="text/javascript">
 		$('.block2-btn-addcart').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
@@ -484,12 +484,12 @@
 	</script>
 
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/vendor/parallax100.js') }}"></script>
+    <script src="{{ URL::asset('public/js/vendor/parallax100.js') }}"></script>
 	<script type="text/javascript">
         $('.parallax100').parallax100();
 	</script>
 <!--===============================================================================================-->
-    <script src="{{ URL::asset('js/libs/main.js') }}"></script>
+    <script src="{{ URL::asset('public/js/libs/main.js') }}"></script>
 	  @yield('plugin_js_for_this_page')
 
 </body>
